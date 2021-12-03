@@ -3,6 +3,7 @@
 .settings
 .project
 .classpath
+node
 
 *.iml
 .DS_Store

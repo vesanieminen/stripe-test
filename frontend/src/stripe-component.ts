@@ -11,47 +11,29 @@ class StripeComponent extends LitElement {
 
     render() {
         return html`
-
-            <style include="shared-styles">
-                #card {
-                    width: 300px;
-                }
-            </style>
-
-
-            <vaadin-vertical-layout>
-
-                <vaadin-horizontal-layout>
-                    <div id="card"></div>
-                </vaadin-horizontal-layout>
-
-                <vaadin-vertical-layout>
+            <vaadin-vertical-layout theme="padding spacing">
+                <div id="card"></div>
+                <vaadin-horizontal-layout id="button-container">
                     <vaadin-button
-                            id="buy"
+                            id="pay"
                             theme="primary"
                             on-click="submit"
-                    >Buy
+                    >Pay
                     </vaadin-button>
-
-                </vaadin-vertical-layout>
+                </vaadin-horizontal-layout>
             </vaadin-vertical-layout>
-
-
         `;
     }
 
     firstUpdated() {
         if (this.key != null) {
-            const stripe = loadStripe(this.key).then(
-                e => {
-                    if (e != null) {
-                        const elements = e.elements();
-                        const cardElement = elements.create("card", {
-                            hidePostalCode: true
-                        });
+            loadStripe(this.key).then(
+                stripe => {
+                    if (stripe != null) {
+                        const elements = stripe.elements();
+                        const cardElement = elements.create("card");
                         cardElement.mount("#card");
                     }
-
                 }
             );
         }

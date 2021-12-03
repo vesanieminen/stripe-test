@@ -15,10 +15,6 @@ public class StripeService {
         this.publicKey = publicKey;
     }
 
-    public void test() {
-        System.out.println("test called!");
-    }
-
     public String getPublicKey() {
         return publicKey;
     }

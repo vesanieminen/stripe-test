@@ -5,6 +5,7 @@
     "@polymer/iron-icon": "3.0.1",
     "@polymer/iron-list": "3.1.0",
     "@polymer/polymer": "3.2.0",
+    "@stripe/stripe-js": "v1.21.2",
     "@vaadin/accordion": "22.0.0",
     "@vaadin/app-layout": "22.0.0",
     "@vaadin/avatar": "22.0.0",
@@ -140,6 +141,7 @@
       "@polymer/iron-icon": "3.0.1",
       "@polymer/iron-list": "3.1.0",
       "@polymer/polymer": "3.2.0",
+      "@stripe/stripe-js": "v1.21.2",
       "@vaadin/accordion": "22.0.0",
       "@vaadin/app-layout": "22.0.0",
       "@vaadin/avatar": "22.0.0",
@@ -265,6 +267,6 @@
       "workbox-precaching": "6.2.0",
       "workbox-webpack-plugin": "6.2.0"
     },
-    "hash": "f01ea21d308b0b513f9e617a89f20b5daed3307ddf3346d4f2416942bc824afb"
+    "hash": "e7ceeddc544e2c11c1a20219270d34e6948e6c854fb3f1dce8e258e8e34a2002"
   }
 }

@@ -2,6 +2,7 @@ dependencies:
   '@polymer/iron-icon': 3.0.1
   '@polymer/iron-list': 3.1.0
   '@polymer/polymer': 3.2.0
+  '@stripe/stripe-js': 1.21.2
   '@vaadin/accordion': 22.0.0
   '@vaadin/app-layout': 22.0.0
   '@vaadin/avatar': 22.0.0
@@ -1487,6 +1488,10 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
+  /@stripe/stripe-js/1.21.2:
+    dev: false
+    resolution:
+      integrity: sha512-iIXe+XF9XdyO4/1i+TPRdsjy4rFOkYLeCsmB/uuSrCVs+Y0nxCdaRK3oD6n7c7lEi1sxDbAQX615wlt9E4EqWQ==
   /@surma/rollup-plugin-off-main-thread/2.2.3:
     dependencies:
       ejs: 3.1.6
@@ -8947,6 +8952,7 @@ specifiers:
   '@polymer/iron-icon': 3.0.1
   '@polymer/iron-list': 3.1.0
   '@polymer/polymer': 3.2.0
+  '@stripe/stripe-js': v1.21.2
   '@vaadin/accordion': 22.0.0
   '@vaadin/app-layout': 22.0.0
   '@vaadin/application-theme-plugin': ./target/plugins/application-theme-plugin
